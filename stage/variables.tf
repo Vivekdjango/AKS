@@ -1,5 +1,5 @@
 variable "rgname" {
-  default = "github-actions1"
+  default = "github-actions-stage"
   type    = string
 }
 
