@@ -9,6 +9,6 @@ terraform {
 
 module "RG" {
   source   = "./module/RG"
-  rgname   = car.rgname
+  rgname   = var.rgname
   location = var.location
 }
