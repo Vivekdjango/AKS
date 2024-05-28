@@ -1,9 +1,9 @@
 variable "rgname" {
-  default = "github-actions1"
-  type = string
+  default =   "github-actions1"
+  type =   string
 }
 
 variable "location" {
-  default = "Central US"
-  type = string
+  default =   "Central US"
+  type =   string
 }
