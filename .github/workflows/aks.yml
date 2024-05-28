@@ -13,9 +13,9 @@ jobs:
     name: 'Terraform'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-      ARM_CLIENT_SECRET: ${{ secret.AZURE_SECRET_VALUE }}
-      ARM_TENANT_ID: ${{ secret.AZURE_TENANT_ID }}
-      ARM_SUBSCRIPTION_ID: ${{ secret.AZURE_SUBSCRIPTIONS }}
+      ARM_CLIENT_SECRET: ${{ secrets.AZURE_SECRET_VALUE }}
+      ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTIONS }}
     
     runs-on: ubuntu-latest
     environment: dev
@@ -62,4 +62,3 @@ jobs:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'apply'
         tf_actions_working_dir: "./terraform"
-
